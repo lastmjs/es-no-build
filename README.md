@@ -30,8 +30,20 @@ npm install --save es-no-build
 ```
 //main-code.js
 
+import {testFunction} from 'test-module.js';
 
+console.log(testFunction());
+```
 
+```
+//test-module.js
+const asyncFunction = async () => {
+  return 'this is the result of the async function';
+};
+
+export const testFunction = async () => {
+  return await asyncFunction();
+};
 ```
 
 # What is the problem?
