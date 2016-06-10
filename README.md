@@ -52,6 +52,11 @@ export const testFunction = async () => {
 };
 ```
 
+If you need to know exactly what is going on during transpilation, including what type of code is accepted, see the following resources:
+* [SystemJS](https://github.com/systemjs/systemjs)
+* [SystemJS TypeScript plugin](https://github.com/frankwallis/plugin-typescript)
+* [SystemJS Babel plugin](https://github.com/systemjs/plugin-babel)
+
 # What is the problem?
 Have you ever wanted to use ES6/ES2015? Have you ever wanted to use TypeScript? What about async/await? Of course you have.
 Unfortunately, most web browsers don't natively support all of the JavaScript features that we want...yet. So, to get around that 
