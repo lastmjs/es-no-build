@@ -70,4 +70,4 @@ Using [SystemJS](https://github.com/systemjs/systemjs) along with a [SystemJS Ty
 No more webpack. No more browserify. No more bundling! No more installing TypeScript, and Babel, and Babel presets, and Babel plugins, and including the Babel polyfill to get async/await to work. Just include SystemJS and this repo's `config.js` file, and all of the transpilation and polyfilling is done for you. Nice!
 
 # Are there possible problems?
-This repo solves the problem of the complexity of the build step, but comes with problems of its own. It's up to you to decided if moving your build step to the browser is a good choice for your application. This will most likely make the initial load of your application slower. How much slower, I don't know, you'll have to try it out for yourself.
+This repo solves the problem of the complexity of the build step, but comes with problems of its own. It's up to you to decide if moving your build step to the browser is a good choice for your application. This will most likely make the initial load of your application slower. How much slower, I don't know, you'll have to try it out for yourself.
