@@ -1,8 +1,3 @@
-var script = document.createElement('script');
-script.src = 'node_modules/systemjs/dist/system.js';
-
-document.head.appendChild(script);
-
 System.config({
     transpiler: 'plugin-babel',
     typescriptOptions: {
