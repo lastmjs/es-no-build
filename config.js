@@ -23,9 +23,9 @@ System.config({
         }
     },
     map: {
-        ts: 'node_modules/plugin-typescript/lib/',
-        typescript: 'node_modules/typescript/lib/',
-        'plugin-babel': 'node_modules/systemjs-plugin-babel/plugin-babel.js',
-        'systemjs-babel-build': 'node_modules/systemjs-plugin-babel/systemjs-babel-browser.js'
+        ts: '/node_modules/plugin-typescript/lib/',
+        typescript: '/node_modules/typescript/lib/',
+        'plugin-babel': '/node_modules/systemjs-plugin-babel/plugin-babel.js',
+        'systemjs-babel-build': '/node_modules/systemjs-plugin-babel/systemjs-babel-browser.js'
     }
 });
