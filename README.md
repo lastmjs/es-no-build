@@ -1,6 +1,6 @@
 # What is this?
 This repo provides a script that will automatically configure [SystemJS](https://github.com/systemjs/systemjs) to use TypeScript and Babel to transpile your
-JavaScript to ES5 directly in the browser, all without a development build step. This gives you easy access to all TypeScript
+TypeScript/ES6/ES2015 to ES5 directly in the browser, all without a development build step. This gives you easy access to all TypeScript
 and ES2015 features, including ES6 modules and the amazing async/await.
 
 # Installation
