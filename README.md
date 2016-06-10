@@ -9,6 +9,8 @@ npm install --save es-no-build
 ```
 
 # Usage
+
+Include SystemJS and this repo's `config.js` file in your `index.html`:
 ```
 <!--index.html-->
 
@@ -27,6 +29,8 @@ npm install --save es-no-build
 </html>
 ```
 
+You can put any TypeScript/ES6/ES2015 code and any Stage 2 or Stage 3 features code in the file that you import:
+
 ```
 //main-code.js
 
@@ -34,6 +38,8 @@ import {testFunction} from 'test-module.js';
 
 console.log(testFunction());
 ```
+
+SystemJS automatically follows all of your imports and transpiles everything:
 
 ```
 //test-module.js
