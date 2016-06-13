@@ -23,7 +23,9 @@ Include SystemJS (installed with this package) and this repo's `config.js` file 
   </head>
   
   <body>
-    System.import('main-code.js');
+    <script>
+      System.import('main-code.js');
+    </script>
   </body>
 
 </html>
