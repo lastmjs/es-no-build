@@ -10,7 +10,7 @@ npm install --save es-no-build
 
 # Usage
 
-Include SystemJS and this repo's `config.js` file in your `index.html`:
+Include SystemJS (installed with this package) and this repo's `config.js` file in your `index.html`:
 ```
 <!--index.html-->
 
