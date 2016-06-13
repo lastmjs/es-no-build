@@ -63,13 +63,16 @@ If you need to know exactly what is going on during transpilation, including wha
 Have you ever wanted to use ES6/ES2015? Have you ever wanted to use TypeScript? What about async/await? Of course you have.
 Unfortunately, most web browsers don't natively support all of the JavaScript features that we want...yet. So, to get around that 
 slight limitation, people have created webpack, Babel, TypeScript, Traceur, etc. Unfortunately again, adding these technologies adds
-complexity to our development environments, including a "build step". What if you don't want a build step? This repo helps solve that problem.
+complexity to our development environments, including a "build step". What if you don't want a development build step? This repo helps solve that problem.
 
 # How is it solved?
 Using [SystemJS](https://github.com/systemjs/systemjs) along with a [SystemJS TypeScript plugin](https://github.com/frankwallis/plugin-typescript) and a [SystemJS Babel plugin](https://github.com/systemjs/plugin-babel), SystemJS will take care of following and importing from all imports in our code, and will transpile our code from TypeScript to ES6/ES2015 to ES5.
 
 # Why is this nice?
-No more webpack. No more browserify. No more bundling! No more installing TypeScript, and Babel, and Babel presets, and Babel plugins, and including the Babel polyfill to get async/await to work. Just include SystemJS and this repo's `config.js` file, and all of the transpilation and polyfilling is done for you. Nice!
+No more webpack. No more browserify. No more installing TypeScript, and Babel, and Babel presets, and Babel plugins, and including the Babel polyfill to get async/await to work. Just include SystemJS and this repo's `config.js` file, and all of the transpilation and polyfilling is done for you in the browser. Nice!
 
 # Are there possible problems?
-This repo solves the problem of the complexity of the build step, but comes with problems of its own. It's up to you to decide if moving your build step to the browser is a good choice for your application. This will most likely make the initial load of your application slower. How much slower, I don't know, you'll have to try it out for yourself.
+This repo solves the problem of the complexity of the development build step, but comes with problems of its own. It will make the initial load of your application slow. How slow? It depends on the structure of your imports and the amount of code you have.
+
+# Production
+Unfortunately, because of the time it takes to transpile and follow all of the imports in your code in the browser, you will probably want to use a build step for production deployment of your application. This repo can be used to keep development simple, but production will need a build step. I'll work on a simple way to use SystemJS to bundle and transpile all of your files for production, I just haven't look too much into it yet.
