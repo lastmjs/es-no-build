@@ -1,0 +1,1 @@
+ESNoBuildConfig.typescriptOptions.tsconfig = true;
