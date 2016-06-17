@@ -8,9 +8,9 @@ and ES6/ES2015 features, including [ES6 modules](http://exploringjs.com/es6/ch_m
 npm install --save es-no-build
 ```
 
-# Usage
+# Basic Usage
 
-Include SystemJS (installed with this package) and this repo's `config.js` file in your `index.html`:
+To immediately get started just include this repo's `config.js` file in your `index.html`:
 ```
 <!--index.html-->
 
@@ -18,7 +18,6 @@ Include SystemJS (installed with this package) and this repo's `config.js` file 
 
 <html>
   <head>
-    <script src="node_modules/systemjs/dist/system.js"></script>
     <script src="node_modules/es-no-build/config.js"></script>
   </head>
   
@@ -58,6 +57,29 @@ If you need to know exactly what is going on during transpilation, including wha
 * [SystemJS](https://github.com/systemjs/systemjs)
 * [SystemJS TypeScript plugin](https://github.com/frankwallis/plugin-typescript)
 * [SystemJS Babel plugin](https://github.com/systemjs/plugin-babel)
+
+# Custom Usage
+
+## Type Checking
+Basic usage as described above will transpile and run TypeScript/ES6/ES2015 code, but it will not perform type checking. If you would like the results of type checking to be logged to the console, include the `add-type-script.js` script anywhere before the `config.js` script:
+
+```
+<head>
+  <script src="node_modules/es-no-build/add-type-check.js"></script>
+  <script src="node_modules/es-no-build/config.js"></script>
+</head>
+```
+
+## tsconfig.json
+If you would like to add TypeScript configuration through a `tsconfig.json` file, then make sure the file is available from your server's root endpoint, and then include the `add-tsconfig.js` script anywhere before the `config.js` script:
+
+```
+<head>
+  <script src="node_modules/es-no-build/add-type-check.js"></script>
+  <script src="node_modules/es-no-build/add-tsconfig.js"></script>
+  <script src="node_modules/es-no-build/config.js"></script>
+</head>
+```
 
 # What is the problem?
 Have you ever wanted to use ES6/ES2015? Have you ever wanted to use TypeScript? What about async/await? Of course you have.
