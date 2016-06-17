@@ -83,6 +83,13 @@ If you would like to add TypeScript configuration through a `tsconfig.json` file
 
 # Special Considerations
 
+## Deduplication
+This repo assumes a flat dependency hierarchy. If you did not install this repo with a version of npm that installs dependencies flatly, then running the following command should fix it (be careful though, you might break other dependencies, I would upgrade to the latest version of npm if possible):
+
+```
+npm dedupe
+```
+
 ## node_modules and tsconfig.json locations
 This repo assumes that your `node_modules` directory and `tsconfig.json` file are located at the root endpoint of your server. If this does not work for you, you can edit the paths in [config.js](https://github.com/lastmjs/es-no-build/blob/master/config.js) temporarily. You should then open an issue so that I can consider the options.
 
