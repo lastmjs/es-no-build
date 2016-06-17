@@ -61,7 +61,7 @@ If you need to know exactly what is going on during transpilation, including wha
 # Custom Usage
 
 ## Type Checking
-Basic usage as described above will transpile and run TypeScript/ES6/ES2015 code, but it will not perform type checking. If you would like the results of type checking to be logged to the console, include the `add-type-script.js` script anywhere before the `config.js` script:
+Basic usage as described above will transpile and run TypeScript/ES6/ES2015 code, but it will not perform type checking. If you would like the results of type checking to be logged to the console, include the `add-type-check.js` script anywhere before the `config.js` script:
 
 ```
 <head>
