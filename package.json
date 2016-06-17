@@ -1,6 +1,6 @@
 {
   "name": "es-no-build",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "Frictionless TypeScript/ES6/ES2015 and beyond.",
   "scripts": {},
   "repository": {
