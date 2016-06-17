@@ -7,3 +7,5 @@ const print = async () => {
 };
 
 print();
+
+let hello;
