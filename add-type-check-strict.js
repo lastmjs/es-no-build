@@ -1,1 +1,1 @@
-ESNoBuildConfig.typescriptOptions.typeCheck = 'strict';
+window.ESNoBuildConfigTypeCheck = 'strict';
