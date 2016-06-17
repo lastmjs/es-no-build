@@ -86,11 +86,8 @@ If you would like to add TypeScript configuration through a `tsconfig.json` file
 ## node_modules and tsconfig.json locations
 This repo assumes that your `node_modules` directory and `tsconfig.json` file are located at the root endpoint of your server. If this does not work for you, you can edit the paths in [config.js](https://github.com/lastmjs/es-no-build/blob/master/config.js) temporarily. You should then open an issue so that I can consider the options.
 
-## Possible Problems
-This repo solves the problem of the complexity of the development build step, but comes with problems of its own. It will make the initial load of your application slow. How slow? It depends on the structure of your imports and the amount of code you have.
-
 ## Production
-Unfortunately, because of the time it takes to transpile and follow all of the imports in your code in the browser, you will probably want to use a build step for production deployment of your application. This repo can be used to keep development simple, but production will need a build step. I'll work on a simple way to use SystemJS to bundle and transpile all of your files for production, I just haven't look too much into it yet.
+Unfortunately, because of the time it takes to transpile and follow all of the imports in your code in the browser, you will probably want to use a build step for production deployment of your application. This repo solves the problem of the complexity of the development build step, with the price of slowness. It will make the initial load of your application slow. How slow? It depends on the structure of your imports and the amount of code you have. This repo can be used to keep development simple, but production will need a build step. I'll work on a simple way to use SystemJS to bundle and transpile all of your files for production, I just haven't look too much into it yet.
 
 # Motivations
 
