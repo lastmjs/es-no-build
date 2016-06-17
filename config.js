@@ -21,20 +21,20 @@ var ESNoBuildConfig = {
     },
     packages: {
         ts: {
-            main: 'plugin.js'
+            main: 'lib/plugin.js'
         },
         typescript: {
-            main: 'typescript.js',
+            main: 'lib/typescript.js',
             meta: {
-                'typescript.js': {
+                'lib/typescript.js': {
                     exports: 'ts'
                 }
             }
         }
     },
     map: {
-        ts: '/node_modules/plugin-typescript/lib/',
-        typescript: '/node_modules/typescript/lib/',
+        ts: '/node_modules/plugin-typescript/',
+        typescript: '/node_modules/typescript/',
         'plugin-babel': '/node_modules/systemjs-plugin-babel/plugin-babel.js',
         'systemjs-babel-build': '/node_modules/systemjs-plugin-babel/systemjs-babel-browser.js'
     }
