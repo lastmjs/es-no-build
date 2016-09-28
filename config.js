@@ -10,7 +10,7 @@ var ESNoBuildConfig = {
     transpiler: 'plugin-babel',
     typescriptOptions: {
         target: 'es6',
-        module: 'es6',
+        module: 'system',
         typeCheck: window.ESNoBuildConfigTypeCheck || false,
         tsconfig: window.ESNoBuildConfigTSConfig || false
     },

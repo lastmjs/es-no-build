@@ -2,10 +2,10 @@ const monkey = async () => {
     console.log('hello');
 };
 
-const print = async () => {
+const printIt = async () => {
     await monkey();
 };
 
-print();
+printIt();
 
 let hello;
