@@ -13,7 +13,7 @@
   },
   "homepage": "https://github.com/lastmjs/es-no-build#readme",
   "dependencies": {
-    "plugin-typescript": "^4.0.17",
-    "systemjs-plugin-babel": "0.0.12"
+    "plugin-typescript": "^5.1.2",
+    "systemjs-plugin-babel": "0.0.15"
   }
 }
