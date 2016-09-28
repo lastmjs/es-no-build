@@ -8,4 +8,10 @@ const printIt = async () => {
 
 printIt();
 
-let hello;
+let hello: monkey;
+
+hello.banana = 5;
+
+interface monkey {
+    readonly banana: boolean;
+}
