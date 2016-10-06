@@ -14,6 +14,7 @@
   "homepage": "https://github.com/lastmjs/es-no-build#readme",
   "dependencies": {
     "plugin-typescript": "^5.1.2",
-    "systemjs-plugin-babel": "0.0.15"
+    "systemjs-plugin-babel": "0.0.15",
+    "typescript": "^2.0.3"
   }
 }
