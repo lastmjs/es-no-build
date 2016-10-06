@@ -1,6 +1,6 @@
 {
   "name": "es-no-build",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "Frictionless TypeScript/ES6/ES2015 and beyond.",
   "scripts": {},
   "repository": {
@@ -13,8 +13,7 @@
   },
   "homepage": "https://github.com/lastmjs/es-no-build#readme",
   "dependencies": {
-    "plugin-typescript": "^5.1.2",
-    "systemjs-plugin-babel": "0.0.15",
-    "typescript": "^2.0.3"
+    "plugin-typescript": "^5.2.7",
+    "systemjs-plugin-babel": "0.0.15"
   }
 }
