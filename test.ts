@@ -1,3 +1,7 @@
+import {TestImport} from './test-import';
+
+TestImport.test();
+
 const monkey = async () => {
     console.log('hello');
 };
@@ -8,10 +12,12 @@ const printIt = async () => {
 
 printIt();
 
-let hello: monkey;
-
-hello.banana = 5;
+let hello: monkey = {
+    banana: 5
+};
 
 interface monkey {
     readonly banana: boolean;
 }
+
+hello.banana;
