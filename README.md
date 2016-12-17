@@ -1,3 +1,5 @@
+This repository will no longer be maintained. It has been replaced, with many improvements, by Zwitterion: https://github.com/lastmjs/zwitterion
+
 # What is this?
 This repo provides a script that will automatically configure [SystemJS](https://github.com/systemjs/systemjs) to use TypeScript and Babel to transpile your
 TypeScript/ES6/ES2015 code to ES5 code directly in the browser, all without a development build step. This gives you easy access to all TypeScript
